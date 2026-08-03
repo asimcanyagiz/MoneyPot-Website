@@ -94,11 +94,8 @@
 
                 <!-- Form column -->
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <form class="contact-form" id="contactForm" action="#">
                         <!-- Web3Forms Access Key (PUBLIC - safe to expose) -->
-                        <input type="hidden" name="access_key" value="e549a701-abc5-4e7c-9537-79efd76bed1f">
-                        <input type="hidden" name="subject" value="New MoneyPot website message">
-                        <input type="hidden" name="from_name" value="MoneyPot Website">
 
                         <!-- Honeypot Field (Bot Trap - invisible to humans) -->
                         <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off">
@@ -119,7 +116,6 @@
                         </div>
 
                         <!-- hCaptcha Widget (free spam protection, domain-agnostic) -->
-                        <div class="h-captcha" data-captcha="true"></div>
 
                         <button type="submit" class="btn btn-primary">
                             <span class="btn-text">Send message</span>
@@ -161,7 +157,7 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <script src="js/web3forms.js"></script>
     <!-- Web3Forms client script with hCaptcha support -->
-    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
