@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FAF4EC">
+    <meta name="description" content="MoneyPot is a friendly money manager & net worth tracker for iPhone. Snap a receipt and let AI add the expense, stick to a monthly budget, and watch your net worth — cash, savings, gold & crypto — in one cozy place.">
+    <meta name="keywords" content="expense tracker, budget app, net worth tracker, receipt scanner, money manager, crypto tracker, gold tracking, personal finance, iphone budget app">
+    <meta name="author" content="MoneyPot">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://moneypot.web.app/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://moneypot.web.app/">
+    <meta property="og:title" content="MoneyPot — Money Manager & Net Worth">
+    <meta property="og:description" content="Money management made simple. Snap a receipt, let AI do the typing, and see your whole net worth in one friendly place. A few taps a day, no spreadsheets.">
+    <meta property="og:image" content="https://moneypot.web.app/Assets/appicon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://moneypot.web.app/">
+    <meta property="twitter:title" content="MoneyPot — Money Manager & Net Worth">
+    <meta property="twitter:description" content="Money management made simple. Snap a receipt, let AI do the typing, and see your whole net worth in one friendly place.">
+    <meta property="twitter:image" content="https://moneypot.web.app/Assets/appicon.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Assets/appicon.png">
+    <link rel="apple-touch-icon" href="Assets/appicon.png">
+
+    <!-- Fonts: IBM Plex Sans (display + body) + IBM Plex Mono (figures) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>MoneyPot — Money Manager & Net Worth Tracker for iPhone</title>
+</head>
+<body>
+    <!-- Skip link for keyboard users -->
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- Paper grain overlay (decorative) -->
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="./" class="navbar-brand" aria-label="MoneyPot home">
+                <img src="Assets/appicon.png" alt="MoneyPot app icon" class="navbar-logo" width="40" height="40">
+                <span class="navbar-name">MoneyPot</span>
+            </a>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="./" class="navbar-link">Home</a>
+                <a href="index.html#features" class="navbar-link">Features</a>
+                <a href="contact.html" class="navbar-link">Contact</a>
+                <a href="https://apps.apple.com/app/id6778097835" class="navbar-cta" aria-label="Download MoneyPot on the App Store">
+                    <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us" alt="Download on the App Store" class="navbar-badge" width="120" height="40">
+                </a>
+            </div>
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbarMenu">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main">
+    <!-- ============================= HERO ============================= -->
+    <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+            <span class="hero-orb hero-orb--1"></span>
+            <span class="hero-orb hero-orb--2"></span>
+            <span class="hero-orb hero-orb--3"></span>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-eyebrow reveal-load" style="--d:0">
+                    <span class="hero-eyebrow-fox" aria-hidden="true">🦊</span> Money Manager &amp; Net Worth
+                </span>
+                <h1 class="hero-title reveal-load" style="--d:1">
+                    Money management,<br><span class="highlight">made simple.</span>
+                </h1>
+                <p class="hero-subtitle reveal-load" style="--d:2">
+                    Track spending, stick to a monthly budget, and watch your whole net worth —
+                    cash, savings, gold &amp; crypto — grow in one friendly place.
+                    <strong>A few taps a day, no spreadsheets.</strong>
+                </p>
+                <div class="hero-cta reveal-load" style="--d:3">
+                    <a href="https://apps.apple.com/app/id6778097835" class="app-store-link" aria-label="Download MoneyPot on the App Store">
+                        <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us" alt="Download on the App Store" class="app-store-badge" width="150" height="50">
+                    </a>
+                    <span class="hero-trial">Free to start · Premium optional</span>
+                </div>
+                <ul class="hero-trust reveal-load" style="--d:4">
+                    <li><span aria-hidden="true">🌍</span> 36 languages</li>
+                    <li><span aria-hidden="true">🔒</span> Face ID lock</li>
+                    <li><span aria-hidden="true">☁️</span> iCloud sync</li>
+                </ul>
+            </div>
+
+            <div class="hero-visual reveal-load" style="--d:2">
+                <!-- Amber portrait pot holding the hero fox -->
+                <div class="hero-pot">
+                    <img src="Assets/fox/FoxMaster.png" alt="MoneyPot's fox mascot hugging a piggy bank" class="hero-fox" width="600" height="600">
+                </div>
+
+                <!-- Floating expense chip -->
+                <div class="float-chip float-chip--expense" aria-hidden="true">
+                    <span class="chip-emoji">☕</span>
+                    <span class="chip-body">
+                        <span class="chip-label">Coffee</span>
+                        <span class="chip-amount chip-amount--out">−$4.20</span>
+                    </span>
+                </div>
+
+                <!-- Floating net worth chip -->
+                <div class="float-chip float-chip--worth" aria-hidden="true">
+                    <span class="chip-label">Net worth</span>
+                    <span class="chip-worth mono">$28,940</span>
+                    <span class="chip-delta chip-delta--up">▲ 3.4%</span>
+                </div>
+
+                <!-- Floating scan chip -->
+                <div class="float-chip float-chip--scan" aria-hidden="true">
+                    <span class="chip-emoji">📸</span>
+                    <span class="chip-label">Receipt scanned</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============================= FEATURES ============================= -->
+    <section class="features" id="features">
+        <div class="container">
+            <header class="section-head">
+                <span class="section-kicker">What's in the pot</span>
+                <h2 class="section-title">Everything your money needs,<br>guided by a friendly fox.</h2>
+                <p class="section-subtitle">Six thoughtful features that turn "ugh, budgeting" into a few happy taps a day.</p>
+            </header>
+
+            <!-- Feature 1 — AI Scan -->
+            <article class="feature">
+                <div class="feature-media">
+                    <div class="feature-glow feature-glow--fox" aria-hidden="true"></div>
+                    <img src="Assets/fox/FoxScan.png" alt="Fox holding a paper receipt" class="feature-fox" width="600" height="600">
+                    <!-- CSS receipt mock -->
+                    <div class="mock mock--receipt" aria-hidden="true">
+                        <div class="receipt">
+                            <div class="receipt-line receipt-line--title"></div>
+                            <div class="receipt-line"></div>
+                            <div class="receipt-line short"></div>
+                            <div class="receipt-line"></div>
+                            <div class="receipt-total"><span>TOTAL</span><span class="mono">$42.90</span></div>
+                            <div class="receipt-scan"></div>
+                        </div>
+                        <div class="mock-chip">
+                            <span class="dot dot--rose"></span> Groceries <span class="mono">−$42.90</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-copy">
+                    <span class="feature-kicker"><span class="feature-num">01</span> AI Scan</span>
+                    <h3 class="feature-title">Let AI do the typing</h3>
+                    <p class="feature-text">Snap a receipt or point your camera at a price tag. MoneyPot reads the amount, figures out the category, and adds the expense for you — no keyboard required.</p>
+                    <ul class="feature-points">
+                        <li>Reads receipts &amp; price tags on-device camera</li>
+                        <li>Fills in amount, merchant &amp; category</li>
+                        <li>You just confirm and it's saved</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Feature 2 — Net Worth -->
+            <article class="feature feature--reverse">
+                <div class="feature-media">
+                    <div class="feature-glow feature-glow--sage" aria-hidden="true"></div>
+                    <img src="Assets/fox/FoxSee.png" alt="Fox presenting with an open paw" class="feature-fox" width="600" height="600">
+                    <!-- CSS net worth mock -->
+                    <div class="mock mock--worth" aria-hidden="true">
+                        <div class="worth-card">
+                            <span class="worth-label">Total net worth</span>
+                            <span class="worth-total mono">$128,540</span>
+                            <span class="worth-delta">▲ $2,180 this month</span>
+                            <ul class="worth-rows">
+                                <li><span class="dot dot--fox"></span>Cash <span class="mono">$8,320</span></li>
+                                <li><span class="dot dot--sage"></span>Savings <span class="mono">$61,200</span></li>
+                                <li><span class="dot dot--gold"></span>Gold <span class="mono">$24,900</span></li>
+                                <li><span class="dot dot--purple"></span>Crypto <span class="mono">$34,120</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-copy">
+                    <span class="feature-kicker"><span class="feature-num">02</span> Net Worth</span>
+                    <h3 class="feature-title">Your whole net worth, at a glance</h3>
+                    <p class="feature-text">Cash, savings, gold and crypto — all in one place, with live prices and clear gains and losses. Finally see the full picture instead of guessing.</p>
+                    <ul class="feature-points">
+                        <li>Live gold &amp; crypto prices</li>
+                        <li>Gains &amp; losses in your own currency</li>
+                        <li>One friendly number for everything you own</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Feature 3 — Auto-categorize -->
+            <article class="feature">
+                <div class="feature-media">
+                    <div class="feature-glow feature-glow--fox" aria-hidden="true"></div>
+                    <img src="Assets/fox/FoxSort.png" alt="Fox waving hello while standing" class="feature-fox" width="600" height="600">
+                    <!-- CSS categorize mock -->
+                    <div class="mock mock--sort" aria-hidden="true">
+                        <span class="pill pill--1"><span class="dot dot--rose"></span> Dining</span>
+                        <span class="pill pill--2"><span class="dot dot--sage"></span> Groceries</span>
+                        <span class="pill pill--3"><span class="dot dot--fox"></span> Transport</span>
+                        <span class="pill pill--4"><span class="dot dot--purple"></span> Bills</span>
+                        <span class="pill pill--5"><span class="dot dot--gold"></span> Fun</span>
+                    </div>
+                </div>
+                <div class="feature-copy">
+                    <span class="feature-kicker"><span class="feature-num">03</span> Auto-categorize</span>
+                    <h3 class="feature-title">Sorted before you even think about it</h3>
+                    <p class="feature-text">Every expense lands in the right category automatically, so your spending organizes itself. Tweak anything you like — MoneyPot learns what you mean.</p>
+                    <ul class="feature-points">
+                        <li>Smart categories out of the box</li>
+                        <li>Custom categories &amp; icons</li>
+                        <li>Clean monthly breakdowns</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Feature 4 — Budgets & alerts -->
+            <article class="feature feature--reverse">
+                <div class="feature-media">
+                    <div class="feature-glow feature-glow--rose" aria-hidden="true"></div>
+                    <img src="Assets/fox/FoxReminder.png" alt="Fox ringing a golden bell" class="feature-fox" width="600" height="600">
+                    <!-- CSS budget mock -->
+                    <div class="mock mock--budget" aria-hidden="true">
+                        <div class="budget-card">
+                            <span class="budget-label">July budget</span>
+                            <div class="budget-ring">
+                                <span class="budget-ring-num mono">72%</span>
+                            </div>
+                            <div class="budget-meta"><span class="mono">$1,440</span> of <span class="mono">$2,000</span></div>
+                        </div>
+                        <div class="mock-chip mock-chip--alert">
+                            <span class="chip-emoji">🔔</span> 80% of budget used
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-copy">
+                    <span class="feature-kicker"><span class="feature-num">04</span> Budgets &amp; alerts</span>
+                    <h3 class="feature-title">A gentle nudge before you overspend</h3>
+                    <p class="feature-text">Set a monthly budget and MoneyPot keeps an eye on it. Friendly reminders arrive right when you're getting close — never a nasty surprise at month's end.</p>
+                    <ul class="feature-points">
+                        <li>Monthly budget with a live progress ring</li>
+                        <li>Smart alerts at the thresholds you pick</li>
+                        <li>Recurring expenses tracked automatically</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Feature 5 — Widgets -->
+            <article class="feature">
+                <div class="feature-media">
+                    <div class="feature-glow feature-glow--fox" aria-hidden="true"></div>
+                    <img src="Assets/fox/FoxWidgets.png" alt="Fox peeking around the edge of a panel" class="feature-fox feature-fox--peek" width="600" height="600">
+                    <!-- CSS widget mock -->
+                    <div class="mock mock--widget" aria-hidden="true">
+                        <div class="widget-card">
+                            <span class="widget-label">This month</span>
+                            <span class="widget-num mono">$1,240</span>
+                            <div class="widget-bars">
+                                <span style="height:40%"></span>
+                                <span style="height:70%"></span>
+                                <span style="height:55%"></span>
+                                <span style="height:90%"></span>
+                                <span style="height:60%"></span>
+                                <span style="height:80%"></span>
+                            </div>
+                        </div>
+                        <div class="widget-card widget-card--small">
+                            <span class="widget-label">Net worth</span>
+                            <span class="widget-num mono">$128k</span>
+                            <span class="chip-delta chip-delta--up">▲ 1.7%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-copy">
+                    <span class="feature-kicker"><span class="feature-num">05</span> Widgets</span>
+                    <h3 class="feature-title">Your money on the home screen</h3>
+                    <p class="feature-text">Keep this month's spending and your net worth one glance away with home-screen and lock-screen widgets. No app-opening required.</p>
+                    <ul class="feature-points">
+                        <li>Home &amp; lock-screen widgets</li>
+                        <li>Spending and net worth at a glance</li>
+                        <li>Sizes to fit your layout</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Feature 6 — Private & secure -->
+            <article class="feature feature--reverse">
+                <div class="feature-media">
+                    <div class="feature-glow feature-glow--sage" aria-hidden="true"></div>
+                    <img src="Assets/fox/FoxLock.png" alt="Fox holding a golden padlock" class="feature-fox" width="600" height="600">
+                    <!-- CSS security mock -->
+                    <div class="mock mock--secure" aria-hidden="true">
+                        <div class="secure-card">
+                            <span class="secure-face">
+                                <svg viewBox="0 0 48 48" width="46" height="46" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Face ID">
+                                    <path d="M6 15V9a3 3 0 0 1 3-3h6"/>
+                                    <path d="M42 15V9a3 3 0 0 0-3-3h-6"/>
+                                    <path d="M6 33v6a3 3 0 0 0 3 3h6"/>
+                                    <path d="M42 33v6a3 3 0 0 1-3 3h-6"/>
+                                    <path d="M18 20v3"/>
+                                    <path d="M30 20v3"/>
+                                    <path d="M24 19v7l-2 2"/>
+                                    <path d="M18 31c2 2 10 2 12 0"/>
+                                </svg>
+                            </span>
+                            <span class="secure-title">Locked with Face ID</span>
+                        </div>
+                        <div class="mock-chip"><span class="dot dot--sage"></span> iCloud synced</div>
+                    </div>
+                </div>
+                <div class="feature-copy">
+                    <span class="feature-kicker"><span class="feature-num">06</span> Private &amp; secure</span>
+                    <h3 class="feature-title">Your data stays yours</h3>
+                    <p class="feature-text">Lock MoneyPot behind Face ID and sync privately across your devices with iCloud. Your records live in your Apple account — not on our servers.</p>
+                    <ul class="feature-points">
+                        <li>Face ID / passcode lock</li>
+                        <li>Private iCloud sync across devices</li>
+                        <li>No third-party analytics</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ============================= HIGHLIGHTS ============================= -->
+    <section class="highlights">
+        <div class="container">
+            <header class="section-head section-head--tight">
+                <span class="section-kicker">Little things you'll love</span>
+                <h2 class="section-title">Small touches, big relief.</h2>
+            </header>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <span class="highlight-emoji" aria-hidden="true">🌍</span>
+                    <h3>36 languages</h3>
+                    <p>Fully localized, so MoneyPot feels at home wherever you are.</p>
+                </div>
+                <div class="highlight-card">
+                    <span class="highlight-emoji" aria-hidden="true">🔁</span>
+                    <h3>Recurring expenses</h3>
+                    <p>Subscriptions and bills log themselves, right on schedule.</p>
+                </div>
+                <div class="highlight-card">
+                    <span class="highlight-emoji" aria-hidden="true">📈</span>
+                    <h3>Gold &amp; crypto</h3>
+                    <p>Live prices keep your assets valued to the minute.</p>
+                </div>
+                <div class="highlight-card">
+                    <span class="highlight-emoji" aria-hidden="true">✨</span>
+                    <h3>Free with premium</h3>
+                    <p>Start free. Upgrade only when you want the extra magic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= FINAL CTA ============================= -->
+    <section class="final-cta">
+        <div class="container final-cta-inner">
+            <img src="Assets/fox/FoxTryFree.png" alt="Fox with open arms, welcoming you in" class="cta-fox" width="600" height="600">
+            <div class="cta-copy">
+                <h2 class="cta-title">Start your first pot today</h2>
+                <p class="cta-subtitle">Download MoneyPot and take control of your spending and net worth. A few taps a day — no spreadsheets, ever.</p>
+                <div class="cta-actions">
+                    <a href="https://apps.apple.com/app/id6778097835" class="app-store-link" aria-label="Download MoneyPot on the App Store">
+                        <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us" alt="Download on the App Store" class="app-store-badge" width="180" height="60">
+                    </a>
+                    <span class="cta-note">Free to start · Premium optional</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- ============================= FOOTER ============================= -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="Assets/appicon.png" alt="MoneyPot app icon" class="footer-logo" width="44" height="44">
+                    <div>
+                        <span class="footer-name">MoneyPot</span>
+                        <span class="footer-tag">Money Manager &amp; Net Worth</span>
+                    </div>
+                </div>
+                <nav class="footer-links" aria-label="Footer">
+                    <a href="index.html#features">Features</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <p class="footer-copyright">&copy; 2026 MoneyPot. Made with 🦊 by appskies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

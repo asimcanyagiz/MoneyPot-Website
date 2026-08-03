@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FAF4EC">
+    <meta name="description" content="Contact the MoneyPot team. Questions, feedback, or support for the MoneyPot money manager & net worth app — we usually reply within 24 hours.">
+    <link rel="canonical" href="https://moneypot.web.app/contact.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://moneypot.web.app/contact.html">
+    <meta property="og:title" content="Contact — MoneyPot">
+    <meta property="og:description" content="Questions or feedback about MoneyPot? Send us a message — we usually reply within 24 hours.">
+    <meta property="og:image" content="https://moneypot.web.app/Assets/appicon.png">
+
+    <title>Contact — MoneyPot</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Assets/appicon.png">
+    <link rel="apple-touch-icon" href="Assets/appicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="./" class="navbar-brand" aria-label="MoneyPot home">
+                <img src="Assets/appicon.png" alt="MoneyPot app icon" class="navbar-logo" width="40" height="40">
+                <span class="navbar-name">MoneyPot</span>
+            </a>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="navbar-link">Home</a>
+                <a href="index.html#features" class="navbar-link">Features</a>
+                <a href="contact.html" class="navbar-link active">Contact</a>
+                <a href="https://apps.apple.com/app/id6778097835" class="navbar-cta" aria-label="Download MoneyPot on the App Store">
+                    <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us" alt="Download on the App Store" class="navbar-badge" width="120" height="40">
+                </a>
+            </div>
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbarMenu">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main">
+    <!-- Page hero -->
+    <section class="page-hero">
+        <div class="hero-bg" aria-hidden="true">
+            <span class="hero-orb hero-orb--1"></span>
+            <span class="hero-orb hero-orb--2"></span>
+        </div>
+        <div class="container">
+            <h1>Get in <span class="highlight">touch</span></h1>
+            <p>Questions, feedback, or a bug to squash? The fox is listening.</p>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Info column -->
+                <div class="contact-info">
+                    <div class="contact-fox-card">
+                        <img src="Assets/fox/FoxTrack.png" alt="MoneyPot's fox mascot with a piggy bank" width="600" height="600">
+                        <p>We read every message and love hearing how MoneyPot works for you.</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon" aria-hidden="true">✉️</span>
+                        <div>
+                            <h3>Email</h3>
+                            <p>meycasim@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon" aria-hidden="true">⏱️</span>
+                        <div>
+                            <h3>Quick response</h3>
+                            <p>We usually reply within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form column -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key (PUBLIC - safe to expose) -->
+                        <input type="hidden" name="access_key" value="e549a701-abc5-4e7c-9537-79efd76bed1f">
+                        <input type="hidden" name="subject" value="New MoneyPot website message">
+                        <input type="hidden" name="from_name" value="MoneyPot Website">
+
+                        <!-- Honeypot Field (Bot Trap - invisible to humans) -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off">
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="How can we help?" rows="5" required></textarea>
+                        </div>
+
+                        <!-- hCaptcha Widget (free spam protection, domain-agnostic) -->
+                        <div class="h-captcha" data-captcha="true"></div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Send message</span>
+                            <span class="btn-loader" style="display: none;">
+                                <span class="spinner"></span> Sending...
+                            </span>
+                        </button>
+
+                        <!-- Status Messages -->
+                        <div id="formStatus" class="form-status" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="Assets/appicon.png" alt="MoneyPot app icon" class="footer-logo" width="44" height="44">
+                    <div>
+                        <span class="footer-name">MoneyPot</span>
+                        <span class="footer-tag">Money Manager &amp; Net Worth</span>
+                    </div>
+                </div>
+                <nav class="footer-links" aria-label="Footer">
+                    <a href="index.html#features">Features</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <p class="footer-copyright">&copy; 2026 MoneyPot. Made with 🦊 by appskies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <!-- Web3Forms client script with hCaptcha support -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+</html>

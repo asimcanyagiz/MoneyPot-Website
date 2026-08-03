@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["5DKBCS58WX.com.asimcanyagiz.MoneyPot"],
+        "components": [
+          { "/": "/moneypot/summary", "comment": "Spending summary tab" },
+          { "/": "/moneypot/wealth", "comment": "Net worth / wallet tab" },
+          { "/": "/moneypot/feed", "comment": "Expense feed tab" },
+          { "/": "/moneypot/expense/*", "comment": "Single expense detail" },
+          { "/": "/moneypot/add", "comment": "Add expense / income" },
+          { "/": "/moneypot/scan", "comment": "Scan a receipt" }
+        ]
+      }
+    ]
+  }
+}
