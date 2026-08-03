@@ -15,6 +15,7 @@
     if (!statusDiv) return;
     statusDiv.textContent = msg;
     statusDiv.className = "form-status " + (ok ? "success" : "error");
+    statusDiv.style.display = "block";
   }
 
   form.addEventListener("submit", function (e) {
