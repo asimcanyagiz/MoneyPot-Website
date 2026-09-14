@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#FAF4EC">
-    <meta name="description" content="MoneyPot Privacy Policy. Your financial data is stored on your device, optional private iCloud sync, opt-in AI scanning, and no third-party analytics.">
+    <meta name="description" content="MoneyPot Privacy Policy. Your financial data is stored on your device, with optional private iCloud sync, opt-in AI scanning, opt-in monthly summary emails, and privacy-first first-party analytics (no IDFA, no cross-app tracking).">
     <link rel="canonical" href="https://moneypot.web.app/privacy.html">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://moneypot.web.app/privacy.html">
     <meta property="og:title" content="Privacy Policy — MoneyPot">
-    <meta property="og:description" content="How MoneyPot handles your data: stored on-device, optional private iCloud sync, opt-in AI scanning, no third-party analytics.">
+    <meta property="og:description" content="How MoneyPot handles your data: stored on-device, optional private iCloud sync, opt-in AI scanning, opt-in monthly summary emails, and privacy-first analytics (no IDFA, no cross-app tracking).">
     <meta property="og:image" content="https://moneypot.web.app/Assets/appicon.png">
 
     <title>Privacy Policy — MoneyPot</title>
@@ -59,7 +59,7 @@
         <div class="container">
             <h1>Privacy <span class="highlight">Policy</span></h1>
             <p>MoneyPot is built to keep your financial data private.</p>
-            <span class="updated">Last updated: June 10, 2026</span>
+            <span class="updated">Last updated: September 11, 2026</span>
         </div>
     </section>
 
@@ -82,13 +82,19 @@
                 </section>
 
                 <section>
-                    <h2><span class="legal-badge" aria-hidden="true">🤖</span> AI scanning (opt-in)</h2>
+                    <h2><span class="legal-badge" aria-hidden="true">🤖</span> AI scanning and category suggestions (opt-in)</h2>
                     <p>When you grant consent and use the camera scanning feature, the captured photo is sent to our AI service provider (OpenAI via AIProxy) solely for the purpose of extracting the receipt or product details. Images are not stored on our servers and are not used for training.</p>
+                    <p>With your AI consent, category suggestions can also send entered expense titles and category information to OpenAI via AIProxy. Batch categorization can include expense titles, amounts, current categories, and merchant details when present, and is used only to suggest appropriate expense categories.</p>
                 </section>
 
                 <section>
-                    <h2><span class="legal-badge" aria-hidden="true">📊</span> Analytics</h2>
-                    <p>The current release of MoneyPot does not include third-party analytics.</p>
+                    <h2><span class="legal-badge" aria-hidden="true">✉️</span> Monthly summary emails (opt-in)</h2>
+                    <p>If you enable "Email me a monthly summary" in Edit Profile, we send a verification email to the address you provide and queue summaries only after you confirm it. To provide the service, our backend processes your email address, language preference, subscription and verification identifiers, and the summary prepared by your device (month, spending totals, category breakdowns, asset names and values, and net worth). It does not upload a copy of your entire local database. Cloudflare Workers and D1 host the subscription and delivery queue; Resend sends the emails; Firebase App Check verifies requests from the app. Turn the toggle off or use the unsubscribe link to stop future summaries and delete the server-side subscription.</p>
+                </section>
+
+                <section>
+                    <h2><span class="legal-badge" aria-hidden="true">📊</span> Analytics &amp; diagnostics</h2>
+                    <p>MoneyPot uses a few third-party services to understand how the app is used and to keep it stable: <strong>Firebase Analytics</strong> (Google) collects anonymous, aggregated usage events such as which screens are opened, using the ad-identifier-free variant that does <strong>not</strong> collect the Advertising Identifier (IDFA) and does <strong>not</strong> track you across other companies' apps or websites; <strong>Firebase Crashlytics</strong> (Google) collects crash and diagnostic reports so we can fix bugs; and <strong>Adapty</strong> manages in-app subscriptions and purchases. These services may process a device-scoped identifier and interaction data linked to your app installation. None of it is used to track you across apps or websites owned by other companies, and MoneyPot does not use App Tracking Transparency.</p>
                 </section>
 
                 <section>
