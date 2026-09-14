@@ -6,7 +6,7 @@
 (function () {
   "use strict";
 
-  var SUPPORT_EMAIL = "meycasim@gmail.com";
+  var SUPPORT_EMAIL = "apputopiacy@gmail.com";
   var form = document.getElementById("contactForm");
   if (!form) return;
 
